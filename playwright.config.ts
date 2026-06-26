@@ -6,7 +6,11 @@ export default defineConfig({
   expect: { timeout: 5_000 },
   fullyParallel: false,
   retries: 0,
-  reporter: 'html',
+  reporter: [
+  ['list'],
+  ['json', { outputFile: 'test-results/results.json' }],
+  ['junit', { outputFile: 'test-results/results.xml' }]
+],
 
   use: {
     baseURL: 'https://eventhub.rahulshettyacademy.com',
