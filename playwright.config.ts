@@ -8,8 +8,7 @@ export default defineConfig({
   retries: 0,
   reporter: [
   ['list'],
-  ['json', { outputFile: 'test-results/results.json' }],
-  ['junit', { outputFile: 'test-results/results.html' }]
+  ['html', { outputFolder: 'playwright-report', open: 'never' }]
 ],
 
   use: {
