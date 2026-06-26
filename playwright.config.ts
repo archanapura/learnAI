@@ -9,7 +9,7 @@ export default defineConfig({
   reporter: [
   ['list'],
   ['json', { outputFile: 'test-results/results.json' }],
-  ['junit', { outputFile: 'test-results/results.xml' }]
+  ['junit', { outputFile: 'test-results/results.html' }]
 ],
 
   use: {
